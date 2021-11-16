@@ -1,6 +1,10 @@
 html{
     font-family: "Risque";
 }
+#logo{
+    display: flex;
+    margin: 10px 0 10px 30px;
+}
 .navbar{
     display: flex;
     height: 100px;
@@ -8,7 +12,7 @@ html{
     color: white;
 }
 .navbar ul{
-    margin: 30px 0px 30px 300px;
+    margin: 30px 0px 30px 280px;
    
 }
 .navbar>ul>a{
@@ -17,8 +21,8 @@ html{
     padding: 40px;
     font-size: large;
 }
-.navbar>ul>a :hover{
-    text-decoration: 2px solid white;
+  ul>a:hover{
+    text-decoration:underline 3px solid white;
 }
 .campaigns>h4{
     color:  rgb(2, 31, 2);
