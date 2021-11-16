@@ -26,7 +26,23 @@ html{
 }
 .campaigns>#col-1{
     display: flex;
+    padding:30px;
+    justify-content: space-around;
+  
+}
+#conference{
+    background-color: rgb(184, 179, 179);
+    border: 2px;
+    box-shadow: 10px 10px 20px;
+    padding: 20px;
+}
+#help,#unmasked{
+    background-color: rgb(184, 179, 179);
+    border: 2px;
+    box-shadow: 10px 10px 20px;
+    padding: 20px;  
 }
 .divide{
     border: 3px solid rgb(2, 31, 2);
+    margin-top: 10px;
 }
