@@ -71,4 +71,15 @@ width: 100px;
 background-color: rgb(2, 31, 2);
 color: white;
 }
+.faqs{
+    line-height: 30px;
+    text-align: center;
+}
+footer{
+    background-color: rgb(2, 31, 2);
+    display: flex;
+    color: white;
+    padding: 10px;
+    justify-content: space-around;
+}
 
