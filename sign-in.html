@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <link href='https://fonts.googleapis.com/css?family=Risque' rel='stylesheet'>
+</head>
+<style>
+   /* body{
+        font-family: "Risque";
+    }
+    *{
+       box-sizing: content-box;
+        border-radius: 20px;
+    }
+    input[type=text], input[type=password]{
+        width: 100%;
+        padding: 15px;
+        margin: 5px 0px 25px 0px;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+    }
+    button{
+        background-color: rgb(2, 31, 2);
+    }
+    button:hover{
+        opacity: 1;
+    }
+    #cancel{
+        color: red;
+        padding: 10px;
+        width: 70px;
+        font-size: large;
+        border-radius: 15px;
+    }
+    .signin{
+        color: white;
+        padding: 10px;
+        width: 70px;
+        font-size: large;
+        border-radius: 15px;
+    }
+    .clear{
+        justify-content: space-around;
+        display: flex;
+    }
+    .clear::after{
+        content: "";
+        clear: both;
+        display: table;
+    }
+    .container{
+        padding: 30px;
+        padding-right: 50px;
+    }
+    .login p{
+        color: rgb(2, 31, 2);
+        float: right;
+        margin: -20px;
+        font-size: large;
+    }*/
+</style>
+<body>
+  <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post" style="border: 11px solid #ccc;">
+   <div class="container">
+        <h1>Sign Up</h1>
+        <p>Fill this form yo create an account.</p>
+        <hr>
+        <label for="username"><b>User name</b></label><br>
+        <input type="text" placeholder="Enter username" name="Username" >
+        
+        <label for="email"><b>Email</b></label><br>
+        <input type="text" placeholder="Email" name="email" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="password" required>
+
+        <label for="cofrim-psw"><b> confirm Password</b></label>
+        <input type="password" placeholder="confirm Password" name="confirm-psw" required>
+
+        <div class="clear">
+            <button id="cancel"  type="button">Cancel</button>
+            <button > 
+                <input type="submit" value="Submit">
+            </button>
+        </div>
+
+        <div class="login">
+            <p>Already have an account? <a href="Login.html">Login</a></p>
+          </div>
+    </div>
+
+  </form>  
+</body>
+<script>
+    function validateForm(){
+        let x =document.forms["myForm"] ["Username"].value;
+        if (x =="") {
+            alert("Username must e filled")
+            return false;
+           
+        }else if (x!=="") {
+            alert("Registration succesfull")
+            return false;
+        }
+    }
+
+    document.getElementById("cancel").addEventListener("click", function(){
+        alert("You have succefully cancel your data");
+    }
+    );
+</script>
+</html>
