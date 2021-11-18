@@ -39,12 +39,28 @@ html{
     border: 2px;
     box-shadow: 10px 10px 20px;
     padding: 20px;
+    height: 500px;
 }
 #help,#unmasked{
     background-color: rgb(184, 179, 179);
     border: 2px;
     box-shadow: 10px 10px 20px;
     padding: 20px;  
+}
+.services{
+    background-color: rgb(182, 175, 175);
+    border-radius: 30px;
+}
+#sec-1,#sec-2{
+    display: flex;
+    padding: 20px;
+    justify-content: space-around;
+}
+h6{
+    color: rgb(2, 31, 2);
+    font-size: large;
+    text-decoration: underline 3px white ;
+    
 }
 .divide{
     border: 3px solid rgb(2, 31, 2);
@@ -59,7 +75,7 @@ h4{
     display: flex;
     padding: 100px;
     justify-content: space-around;
-    line-height: 30px;
+    line-height: 28px;
     height: 300px;
 }
 .Support-Us h5{
@@ -74,6 +90,8 @@ padding: 10px;
 width: 100px;
 background-color: rgb(2, 31, 2);
 color: white;
+border-radius: 25px;
+
 }
 .faqs{
     line-height: 30px;
