@@ -20,29 +20,60 @@
                         <a href="#"> About Us</a>
                         <a href="#">Publications</a>
                         <a href="#">Get Involved</a>
-                        <a href="#">Sign in</a>
-                </ul>
+                        <a href="sign-in.html">Sign in</a>
+               </ul>
         </div>
         <div class="campaigns">
         <h4>Campaigns</h4>
         <div id="col-1">
         <div id="conference"> 
             <h4>Conference</h4>
-            <img src="images/conference.jpg" alt="" height="300px" width="300px">
+            <img src="images/conference.jpg" alt="" height="250px" width="250px">
             <p> Holdung conferences will help in raising <br>awareness concerning mental illness.<br>Conference gather people from different background <br> and train them to go and impact the society</p>
         </div>
         <div id="help">
             <h4>Help Group</h4>
-            <img src="images/diversity-image_1000x1052-removebg-preview.png" alt="" height="300px" width="300px">
+            <img src="images/diversity-image_1000x1052-removebg-preview.png" alt="" height="250px" width="250px">
             <p> Help groups helps in bringing up<br> efforts of those willing to help.<br> let's join hands and help the mentaly ill<br>patience accept themselves and get to know <br>themselves</p>
         </div>
         <div id="unmasked">
             <h4>Friendly chat</h4>
-            <img src="images/2017-04-03_wex_29870904_I1-removebg-preview.png" alt="" height="300px" width="300px">
+            <img src="images/2017-04-03_wex_29870904_I1-removebg-preview.png" alt="" height="250px" width="250px">
             <p>Many people find it hard to open up.<br>This may be due to not finding someone to trust<br>some may be due to betrayal after openinng up<br>
             Friendly chat campaign will enable them <br> open up with ease and find help from<br> our proffessionals</p>
         </div>
         </div>
+        </div>
+        <div class="services">
+            <h4> Our Services</h4>
+            <div id="sec-1">
+            <div class="col-1">
+                <img src="images/group-training.jpg" alt="" >
+                <h6>Group training</h6>
+            </div>
+            <div class="col-2">
+                <img src="images/stress-management.jpg" alt="">
+                <h6>stress management</h6>
+            </div>
+            <div class="col-3">
+                <img src="images/parenting-training.jpg" alt="">
+                <h6>Parenting Training</h6>
+            </div>
+            </div>
+            <div id="sec-2">
+                <div class="col-4">
+                    <img src="images/legal-advise.jpg" alt="">
+                    <h6>Legal advice on mental issues</h6>
+                </div>
+                <div class="col-5">
+                    <img src="images/retirement-planning.jpg" alt="">
+                    <h6>Retiremenr Training</h6>
+                </div>
+                <div class="col-6">
+                    <img src="images/work-life-balance.jpg" alt="">
+                    <h6>Work Life Balance</h6>
+                </div>
+            </div>
         </div>
         <div class="divide"></div>
         <div  id ="Head-Supp"> <h4> Support Us</h4></div>
@@ -50,16 +81,28 @@
             <div id="Volunteer">
                 <h5>Volunteer</h5>
                 <p>Join the mental Health Awareness Committee<br>Want to Join as a volunteer? Our<br> residence outreach.Committee and<br>subcommunities will be hiring a team of Volunteers.<br>
-                Join us here</p>
-                <button type="button">Volunteer</button>
+                click Yes or No depending on your choice</p>
+                <form name="myForm" action="/action_page.php" onsubmit="return validateForm()" method="post">
+                <input type="radio" id="yes" name="Interested" value="Yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="Interested" value="No">
+                <label for="no">No</label> <br>
+                <button id="btn" type="button" value="volunteer">Volunteer</button>
+                </form>
             </div>
             <div class="vert"></div>
              <div id="donate">
                  <h5>Donate</h5>
                  <p>Everybody needs help and when we<br> are in a position to help then why don't we<br>
                 join hands and donate the little <br> we have to assist the mentally ill <br> patients.Make them aware that they are <br>not alone in this. We can do this by simple donation</p>
-                <button type="button">Donate Now</button>
-             </div>          
+                <form name="myForm"  action="/action_page.php" onsubmit="return validateForm()" method="post">
+                    <input type="radio" id="yes" name="Interested" value="Yes">
+                    <label for="yes">Today</label><br>
+                    <input type="radio" id="no" name="Interested" value="No">
+                    <label for="no">Next time</label> <br>
+                    <button id="button" type="button" value="donate">Donate</button>
+                    </form>
+           </div>          
         </div>
         <div class="divide"></div>
         <div class="faqs">
@@ -76,4 +119,25 @@
         </footer>
     </main>
 </body>
+<script>
+   // function validateForm(){
+      //  let x = document.forms["myForm"] ["Interested"].value;
+        //if (x =="") {
+          //  alert("fill the volunter form")
+            //return false;
+      //  }else{
+         //   alert("thankyou for your response")
+        //}
+   // }
+
+    document.getElementById("btn").addEventListener("click", function(){
+        alert("Thankyou for your response");
+    }
+    );
+
+    document.getElementById("button").addEventListener("click", function(){
+        alert("Thankyou for your response");
+    }
+    );
+</script>
 </html>
